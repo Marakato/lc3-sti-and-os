@@ -1,0 +1,33 @@
+Trap&Interrupt Vector:
+0x0000~0x00FF
+
+0x0000 local_function:
+	r0:	0 loadfilea
+		1 loadfileb
+		2 changertitype
+		3 cls
+		4 kernelpush
+		5 kernelpop
+		6 print error string
+
+0x0020 GETC
+0x0021 OUT
+0x0022 PUTS
+0x0023 IN
+0x0024 PUTSP [NOT IMPLEMENTED]
+0x0025 HALT
+
+
+
+0x0100~0x01FF
+
+0x0100: kernel panic
+0x0101: UserRTI
+0x0102: OpenFileError
+
+
+0x0180: keyboard interrupt
+
+Implement&OS:
+0x0200~0x1000
+
